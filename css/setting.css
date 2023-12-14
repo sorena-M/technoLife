@@ -1,0 +1,246 @@
+/*this sylesheet is for casual css codes that doesnt matter in other sizes*/
+@font-face {
+  font-family: iran-sans;
+  src: url(../IRANSansX-Regular.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: iran-sans;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+.login {
+  cursor: pointer;
+}
+.mainNavi > .next,
+.mainNavi > .perv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333335 !important;
+  fill: white;
+}
+.mainNavi > svg {
+  scale: 80%;
+  height: 25px;
+  width: 25px;
+}
+.mainNavi > .next:hover,
+.mainNavi > .perv:hover {
+  background-color: #212122 !important;
+}
+.footer {
+  margin: 30px auto !important;
+  text-align: center;
+}
+.pointer {
+  cursor: pointer;
+}
+.block {
+  display: block !important;
+}
+.none {
+  display: none !important;
+}
+.flex {
+  display: flex !important;
+}
+.no-marg {
+  margin-top: -7px !important;
+}
+.gray {
+  color: gray;
+}
+.blue {
+  color: #062397;
+}
+.blue-a {
+  color: #0a2fc2;
+  font-size: 15px;
+  margin: 20px 0 !important;
+  cursor: pointer;
+}
+.red {
+  color: #971506;
+}
+.mg-5 {
+  margin-bottom: 25px;
+}
+.blue-seller {
+  color: #0b39ee;
+}
+.w-small {
+  flex-grow: 1;
+  width: 30%;
+}
+.w-bigger {
+  flex-grow: 7;
+  width: 70%;
+  height: 70% !important;
+  margin-top: -5px;
+}
+.scrollNone {
+  overflow: hidden !important;
+}
+.margtop {
+  margin-top: -40px;
+  opacity: 0;
+  display: none;
+  position: fixed;
+}
+.wrap{
+  text-align: center;
+}
+.margtop * {
+  display: none;
+}
+.hie40 {
+  height: 40px !important;
+}
+body {
+  transition: all 200ms linear;
+}
+div.blackContainer > div.banner-black {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 30px;
+  background: url(../img/blackbanner.png) no-repeat center center;
+  background-color: rgb(24, 22, 24);
+}
+.block1 {
+  display: block !important;
+  animation-name: leftslide;
+  animation-duration: 500ms;
+}
+@keyframes leftslide {
+  0% {
+    position: absolute !important;
+    left: 0% !important;
+  }
+  100% {
+    left: -280px !important;
+  }
+}
+.bartar {
+  overflow: hidden !important;
+}
+div.header .left-slide {
+  gap: 10px;
+}
+.item-container > * {
+  cursor: pointer;
+}
+.overflowAuto {
+  overflow: auto;
+}
+.font-bold-24 {
+  font-size: 18px;
+  padding: 0 5px;
+}
+.blue-100 {
+  background-color: rgb(190, 239, 255);
+  border: 2px solid rgb(182, 227, 241);
+}
+.blue-200 {
+  background-color: rgb(182, 227, 241);
+  border: 2px solid lightblue;
+}
+.blue-300 {
+  background-color: lightblue;
+  border: 2px solid rgb(171, 219, 235);
+}
+.blue-400 {
+  background-color: rgb(171, 219, 235);
+  border: 2px solid rgb(155, 203, 218);
+}
+.blue-500 {
+  background-color: rgb(155, 203, 218);
+  border: 2px solid rgb(163, 199, 211);
+}
+.blue-600 {
+  background-color: rgb(163, 199, 211);
+  border: 2px solid rgb(156, 191, 203);
+}
+.red-theme {
+  background-color: rgba(255, 0, 0, 0.508);
+  border: 2px solid red;
+}
+.green-theme {
+  background-color: rgba(0, 128, 0, 0.602);
+  border: 2px solid green;
+}
+.orange-theme {
+  background-color: rgba(255, 166, 0, 0.54);
+  border: 2px solid orange;
+}
+.blue-theme {
+  background-color: rgba(173, 216, 230, 0.861);
+  border: 2px solid lightblue;
+}
+.perpule-theme {
+  background-color: rgba(128, 0, 128, 0.605);
+  border: 2px solid purple;
+}
+.yellow-theme {
+  background-color: rgba(255, 255, 0, 0.51);
+  border: 2px solid yellow;
+}
+.gray {
+  color: rgb(101, 101, 101);
+}
+.blue-border-30r {
+  border: 2px solid #0b39ee;
+  border-radius: 30px;
+}
+.blue-border-20r {
+  border: 2px solid #0b39ee;
+  border-radius: 20px;
+}
+.blue-border-10r {
+  border: 2px solid #0b39ee;
+  border-radius: 10px;
+}
+.border-top {
+  width: 98%;
+  margin: 20px auto;
+  height: 0.5px;
+  background-color: #6f6f6f;
+}
+.opacity-700 {
+  opacity: 0.4;
+}
+.opacity-800 {
+  opacity: 0.6;
+}
+.opacity-900 {
+  opacity: 0.8;
+}
+.op1 {
+  opacity: 1 !important;
+}
+
+.column {
+  flex-direction: column;
+  direction: rtl;
+}
+.bottom {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #040f3b;
+  border-radius: 0 0 30px 30px;
+}
+.bottom * {
+  color: white;
+  font-size: 10px;
+}
+.fake {
+  opacity: 0;
+}

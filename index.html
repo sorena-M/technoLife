@@ -1,0 +1,2170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body id="body">
+    <!--subsearch start-->
+    <div class="subsearch" id="subSearch">
+      <!--searchbox start-->
+      <div class="search">
+        <input
+          type="search"
+          class="searchbox-sub"
+          placeholder="search"
+          id="searchval"
+          autocomplete="off"
+        />
+        <div class="submit" id="submitSearch">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="down-wrote">
+        <span class="gray"> جستجو برای ...</span>
+        <span id="searchinval" class="blue"></span>
+      </div>
+
+      <!--search end-->
+      <!--filter by part start-->
+      <div class="filter-item">
+        <h3 class="no-marg">فیلتر ها</h3>
+        <div class="filter-by">
+          <div class="part">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 512 512"
+            >
+              <path
+                d="M256 80C141.1 80 48 173.1 48 288V392c0 13.3-10.7 24-24 24s-24-10.7-24-24V288C0 146.6 114.6 32 256 32s256 114.6 256 256V392c0 13.3-10.7 24-24 24s-24-10.7-24-24V288c0-114.9-93.1-208-208-208zM80 352c0-35.3 28.7-64 64-64h16c17.7 0 32 14.3 32 32V448c0 17.7-14.3 32-32 32H144c-35.3 0-64-28.7-64-64V352zm288-64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H352c-17.7 0-32-14.3-32-32V320c0-17.7 14.3-32 32-32h16z"
+              />
+            </svg>
+          </div>
+          <div class="part">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M80 0C44.7 0 16 28.7 16 64V448c0 35.3 28.7 64 64 64H304c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H80zM192 400a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+              />
+            </svg>
+          </div>
+          <div class="part">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 576 512"
+            >
+              <path
+                d="M64 0C28.7 0 0 28.7 0 64V352c0 35.3 28.7 64 64 64H240l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32H416c17.7 0 32-14.3 32-32s-14.3-32-32-32H346.7L336 416H512c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64H64zM512 64V288H64V64H512z"
+              />
+            </svg>
+          </div>
+          <div class="part">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 640 512"
+            >
+              <path
+                d="M192 64C86 64 0 150 0 256S86 448 192 448H448c106 0 192-86 192-192s-86-192-192-192H192zM496 168a40 40 0 1 1 0 80 40 40 0 1 1 0-80zM392 304a40 40 0 1 1 80 0 40 40 0 1 1 -80 0zM168 200c0-13.3 10.7-24 24-24s24 10.7 24 24v32h32c13.3 0 24 10.7 24 24s-10.7 24-24 24H216v32c0 13.3-10.7 24-24 24s-24-10.7-24-24V280H136c-13.3 0-24-10.7-24-24s10.7-24 24-24h32V200z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!--filter by part end-->
+      <!-- top searchs start-->
+      <div class="best-seller">
+        <h3>جستجو های محبوب</h3>
+        <!--filter-->
+        <div class="filter">
+          <span class="filter-box"> note 12</span>
+          <span class="filter-box"> A24</span>
+          <span class="filter-box">A34</span>
+          <span class="filter-box">S21</span>
+          <span class="filter-box">A73</span>
+          <span class="filter-box">A53</span>
+          <span class="filter-box">A14</span>
+          <span class="filter-box">12c</span>
+          <span class="filter-box"> iphone 13</span>
+          <span class="filter-box">play station</span>
+        </div>
+      </div>
+      <!-- top searchs end-->
+      <!--founds start-->
+      <div class="found-container">
+        <h3>پیشنهاد ما</h3>
+        <div class="found-slider">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./img/p-3.webp" />
+              <div class="text">گوشی های شیامی</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./img/p-2.webp" />
+              <div class="text">هارد 1 ترابایت</div>
+            </div>
+
+            <div class="mySlides fade">
+              <img src="./img/p-1.webp" />
+              <div class="text">تلوزیون اقتسادی</div>
+            </div>
+          </div>
+          <br />
+          <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+      </div>
+      <!--founds end-->
+      <!--close btn-->
+      <div class="more-btn">
+        <!--close btn-->
+        <div class="close-btn" id="closeBtn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 384 512"
+          >
+            <path
+              d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            />
+          </svg>
+        </div>
+        <!--setting btn-->
+        <div class="setting-btn" id="setting">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="sub-setting" id="subSetting">
+        <svg
+          class="minus"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 448 512"
+        >
+          <path
+            d="M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z"
+          />
+        </svg>
+        <svg
+          class="item-setting"
+          xmlns="http://www.w3.org/2000/svg"
+          height="1em"
+          viewBox="0 0 512 512"
+        >
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"
+          />
+        </svg>
+      </div>
+      <!--anwser start-->
+      <div class="anwser-search" id="ansSearch">
+        <div class="scroll">
+          <h4 class="mg-5">
+            <span class="gray">موارد پیدا شده برای </span>
+            <span id="result" class="blue"></span>
+          </h4>
+          <!--answer container start-->
+          <div class="close-btn" id="closeSearch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+              />
+            </svg>
+          </div>
+          <div class="answer-box-container" id="hasContent">
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab iphone"></div>
+            <div class="answer-box ab"></div>
+            <div class="answer-box ab"></div>
+            <div class="answer-box ab"></div>
+            <div class="answer-box ab"></div>
+            <div class="answer-box ab"></div>
+            <div class="answer-box ab"></div>
+          </div>
+          <!--answer container end-->
+        </div>
+      </div>
+      <!--anwser end-->
+    </div>
+    <!--subsearch end-->
+    <div class="backdrop" id="backDrop"></div>
+    <!--header start-->
+    <div class="header" id="header">
+      <div class="banner">
+        <img src="./img/banner.webp" alt="" />
+      </div>
+      <!--top header start-->
+      <div class="top-header">
+        <!--left side start-->
+        <div class="left-side">
+          <!--buy container-->
+          <div class="buy-box">
+            <img src="./img/buy-logo.png" alt="" class="img-control" />
+          </div>
+          <!--login-->
+          <div class="login">
+            <span class="lef"> ورود</span>
+            <span class="righ">ثبت نام</span>
+          </div>
+        </div>
+        <!--left side end-->
+        <!--right side start-->
+        <div class="right-side">
+          <div class="hammenu" id="hammenu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1em"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </div>
+          <!--logo-->
+          <div class="logo">
+            <img
+              src="./img/static_technolife-brand.svg"
+              alt=""
+              class="w-small"
+            />
+            <img
+              src="./img/static_technolife-title.svg"
+              alt=""
+              class="w-bigger"
+            />
+          </div>
+          <!--input-->
+          <input
+            type="search"
+            id="searchBox_input"
+            class="searchbox"
+            autocomplete="off"
+          />
+        </div>
+
+        <!--right side end-->
+      </div>
+      <!--top header end-->
+      <!--category part start-->
+      <div class="category">
+        <!--left category-->
+        <div class="flex-category">
+          <span class="pointer category-sub mobile">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>موبایل</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت همه ی موبایل ها</h2>
+                        <ul>
+                          <li>گوشی اپل</li>
+                          <li>گوشی سامسونگ</li>
+                          <li>گوشی شیامی</li>
+                          <li>گوشی هاوی</li>
+                          <li>گوشی داریا</li>
+                          <li>گوشی نوکیا</li>
+                          <li>گوشی پوکو</li>
+                          <li>گوشی گوگل</li>
+                          <li>گوشی رلمی</li>
+                          <li>گوشی موتولا</li>
+                          <li>گوشی ناتینگ</li>
+                          <li>گوشی وان پلاس</li>
+                          <li>گوشی جی پلاس</li>
+                          <li>گوشی داکس</li>
+                          <li>گوشی ارود</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لوازم جانبی گوشی</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">لوازم جانبی گوشی (همه ی محصولات)</h2>
+                        <ul>
+                          <li>شارژر گوشی</li>
+                          <li>شارژر ایفون</li>
+                          <li>شارژر سامسونگ</li>
+                          <li>شارژر انکر</li>
+                          <li>شارژر فندکی</li>
+                          <li>شارژر وایرلس</li>
+                          <li>قاب و کیس گوشی</li>
+                          <li>کابل و رابط</li>
+                          <li>کابل ایفون</li>
+                          <li>کابل تایپ C</li>
+                          <li>کابل aux</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>قطعات موبایل</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قطعات موبایل</h2>
+                        <ul>
+                          <li>تاچ ال سی دی</li>
+                          <li>برد موبایل</li>
+                          <li>باتری موبایل</li>
+                          <li>برد شارژ گوشی</li>
+                          <li>دوربین اصلی گوشی</li>
+                          <li>ئوربین سلفی</li>
+                          <li>درب پشت گوشی</li>
+                          <li>فریم گوشی</li>
+                          <li>حسگر اثر انگشت</li>
+                          <li>قلت ال سی دی گوشی</li>
+                          <li>بازر اسپیکر گوشی</li>
+                          <li>فلت شارژر گوشی</li>
+                          <li>خشاب سیمکارد</li>
+                          <li>شیشه دوربین گوشی</li>
+                          <li>قطعات گوشی سامسونگ</li>
+                          <li>قطعات گوشی شیامی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>گوشی بر اساس عملکرد</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>گوشی ساده</li>
+                          <li>گوشی گیمینگ</li>
+                          <li>Gگوشی 5</li>
+                          <li>گوشی عکاس</li>
+                          <li>گوشی با باتری قوی</li>
+                          <li>گوشی ضد اب</li>
+                          <li>گوشی دکمه ای</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>گوشی بر اساس حافظه</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>گوشی تا 32 گیگ</li>
+                          <li>گوشی تا 64 گیگ</li>
+                          <li>گوشی تا 128 گیگ</li>
+                          <li>گوشی تا 256 گیگ</li>
+                          <li>گوشی تا 512 گیگ</li>
+                          <li>گوشی تا 1024 گیگ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>گوشی بر اساس عمل کرد</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">test li 3</h2>
+                        <ul>
+                          <li>گوشی ساده</li>
+                          <li>گوشی ارزان</li>
+                          <li>گوشی تا 2 میلیون تومان</li>
+                          <li>گوشی تا 4 میلیون تومان</li>
+                          <li>گوشی تا 7 میلیون تومان</li>
+                          <li>گوشی تا 15 میلیون تومان</li>
+                          <li>گوشی تا 25 میلیون تومان</li>
+                          <li>گوشی تا 40 میلیون تومان</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            گوشی موبایل
+          </span>
+          <span class="pointer category-sub laptop">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لپتاپ ها</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت لپتاپ ها</h2>
+                        <ul>
+                          <li>مکبوک</li>
+                          <li>لپتاپ ایسوس</li>
+                          <li>لپتاپ لنوو</li>
+                          <li>لپتاپ اچ پی</li>
+                          <li>لپتاپ ماکروسافت</li>
+                          <li>لپتاپ ایسر</li>
+                          <li>لپتاپ ام اس ای</li>
+                          <li>لپتاپ هواوی</li>
+                          <li>لپتاپ گیگابایت</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لپتاپ بر اساس کاربرد</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>لپتاپ گیمینگ</li>
+                          <li>لپتاپ دانشجویی</li>
+                          <li>لپتاپ ارزان</li>
+                          <li>لپتاپ لمسی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لوازم و قطعات لپتاپ</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>پایه خنک کننده</li>
+                          <li>پایه نگه دارنده</li>
+                          <li>کیف و کوله لپتاپ</li>
+                          <li>دی وی دی رایتر</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لپتاپ بر اساس قیمت</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>تا 20 میلیون تومن</li>
+                          <li>تا 30 میلیون تومن</li>
+                          <li>تا 35 میلیون تومن</li>
+                          <li>تا 40 میلیون تومن</li>
+                          <li>تا 45 میلیون تومن</li>
+                          <li>تا 50 میلیون تومن</li>
+                          <li>تا 60 میلیون تومن</li>
+                          <li>تا 70 میلیون تومن</li>
+                          <li>تا 80 میلیون تومن</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>تبلت</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت تبلت (همه ی محصولات)</h2>
+                        <ul>
+                          <li>تبلت اپل</li>
+                          <li>تبلت سامسونگ</li>
+                          <li>تبلت شیامی هواوی</li>
+                          <li>تبلت جی ال اکس</li>
+                          <li>تبلت لنوو</li>
+                          <li>سرفیس</li>
+                          <li>کتابخوان</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            لپ تاپ و تبلت
+          </span>
+          <span class="pointer category-sub headphone">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>انواع هندزفری</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت هندزفری</h2>
+                        <ul>
+                          <li>ایرپاد</li>
+                          <li>هندز فری سامسونگ</li>
+                          <li>هندزفری qcy</li>
+                          <li>هندزفری هایلو</li>
+                          <li>هندزفری شیامی</li>
+                          <li>هندزفری امیزفیت</li>
+                          <li>هندزفری انکر</li>
+                          <li>هندفری tch</li>
+                          <li>هندزفری هواوی</li>
+                          <li>هندزفری سونی</li>
+                          <li>هندزفری لنوو</li>
+                          <li>هندزفری تسکو</li>
+                          <li>هندزفری زیلوت</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>انواع هندزفری</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>هدفون و هدست</li>
+                          <li>هدفون گیمینگ</li>
+                          <li>هدفون گیمینگ ریزر</li>
+                          <li>هدفون گیمینگ تسکو</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لوازم جانبی هندزفری</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>کاور هندزفری</li>
+                          <li>موازم جانبی هندزفری</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>هندزفری بر اساس کاربرد</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>هندزفری سیمی</li>
+                          <li>هندزفری گردنی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            هدفون و هندزفری
+          </span>
+          <span class="pointer category-sub smartwatch">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>ساعت هوشمند</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت ساعت هوشمند (تمامی محصولات)</h2>
+                        <ul>
+                          <li>مچبند هوشمند</li>
+                          <li>اپل واچ</li>
+                          <li>ساعت هوشمند سامسونگ</li>
+                          <li>ساعت هوشمند شیامی</li>
+                          <li>ساعت هوشمند هواوی</li>
+                          <li>ساعت هوشمند امیزفیت</li>
+                          <li>ساعت هوشمند میبرو</li>
+                          <li>ساعت هوشمند tch</li>
+                          <li>ساعت هوشمند هایلو</li>
+                          <li>ساعت هوشمند کسیکت</li>
+                          <li>ساعت جی تن</li>
+                          <li>اپل واچ سری 9</li>
+                          <li>اپل واچ سری 8</li>
+                          <li>اپل واچ سری 7</li>
+                          <li>ساعت طرح اپل واچ</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>ساعت مچی</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">ساعت مچی (همه ی محصولات)</h2>
+                        <ul>
+                          <li>ساعت مچی دیجیتال</li>
+                          <li>ساعت مچی عقربه ای</li>
+                          <li>ساعت مچی ارزان</li>
+                          <li>ساعت مچی کاسیکو</li>
+                          <li>ساعت مچی جی شاک</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لوازم جانبی ساعت هوشمند</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">لوازم جانبی ساعت هوشمند</h2>
+                        <ul>
+                          <li>بند ساعت هوشمند</li>
+                          <li>گلس ساعت هوشمند</li>
+                          <li>بند اپل واچ</li>
+                          <li>شارژر ساعت هوشمند</li>
+                          <li>کاور ساعت هوشمند</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>ساعت بر اساس کاربرد</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>ساعت هوشمند با قابلیت مکالمه</li>
+                          <li>ساعت هوشمند سیمکارد خور</li>
+                          <li>ساعت ضد اب</li>
+                          <li>ساعت زنانه</li>
+                          <li>ساعت مردانه</li>
+                          <li>ساعت هوشمندگرد</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>ساعت بر اساس قیمت</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>ساعت ساده</li>
+                          <li>ساعت تا 3 میلیون تومن</li>
+                          <li>ساعت تا 5 میلیون تومن</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            ساعت و بند هوشمند
+          </span>
+          <span class="pointer category-sub oficecam">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>all in one</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت کامپیوتر های all in one</h2>
+                        <ul>
+                          <li>ال این وان لنوو</li>
+                          <li>ال این وان ایسوس</li>
+                          <li>ال این وان msi</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>تجهیزات و قطعات کامپیوتر</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>موس</li>
+                          <li>موس گیمینگ</li>
+                          <li>موس گیمینگ ریزر</li>
+                          <li>موس لاجیک</li>
+                          <li>موس تسکو</li>
+                          <li>کیبورد</li>
+                          <li>کیبورد گیمینگ</li>
+                          <li>کیبورد سرفیس</li>
+                          <li>کیبورد ریزر</li>
+                          <li>کیبورد لاجیک</li>
+                          <li>سمت موس و کیبورد</li>
+                          <li>وبکم</li>
+                          <li>پایه مانیتور</li>
+                          <li><a href="#" class="blue-a">more</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>مانیتو</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت مانیتور (همه ی محصولات)</h2>
+                        <ul>
+                          <li>مانیتور ایسوس</li>
+                          <li>مانیتور جی تی</li>
+                          <li>مانیتور سامسونگ</li>
+                          <li>مانیتور ام اس ای</li>
+                          <li>مانیتور لنوو</li>
+                          <li>مانیتور جی پلاس</li>
+                          <li>مانیتور گیمینگ</li>
+                          <li>مانیتور گیمینگ ایسوس</li>
+                          <li>مانیتور گیمینگ سامسونگ</li>
+                          <li>مانیتور داهوا</li>
+                          <li>مانیتور هواوی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            کامپیوتر و ماشین های اداری
+          </span>
+          <span class="pointer category-sub server">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>پاوربانک</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت پاوربانک (همه ی محصولات)</h2>
+                        <ul>
+                          <li>پاوربانک شیامی</li>
+                          <li>پاوربانک انکر</li>
+                          <li>پاوربانک باسوس</li>
+                          <li>پاوربانک پووان</li>
+                          <li>پاوربانک تسکو</li>
+                          <li>پاوربانک adata</li>
+                          <li>پاوربانک ریمیکس</li>
+                          <li>پاوربانک سامسونگ</li>
+                          <li>پاوربانک مک دودو</li>
+                          <li>پاوربانک انرجایزر</li>
+                          <li>پاوربانک هیسکا</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>هار ، فلش ویا ssd</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">test li 3</h2>
+                        <ul>
+                          <li>فمش مموری</li>
+                          <li>هارد اکسترنال</li>
+                          <li>هارد اکسترنال ssd</li>
+                          <li>هارد اینترنال</li>
+                          <li>کارت حافظه</li>
+                          <li>هارد ssd</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>تجهیزات شبکه</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>هاب و دانگل</li>
+                          <li>سویچ شبکه</li>
+                          <li>کارت شبکه</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>مودم ، روتور و اکسس پوینت</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>مودم و روتر adsl/vdsl</li>
+                          <li>مودم و روتر /5g/4g/3g</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>دوربین مدار بسته</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>دوربین مداربسته</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            شبکه و تجهیزات زحیره سازی
+          </span>
+          <span class="pointer category-sub gaming"
+            ><div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>کنسول های بازی</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت کنسول بازی (همه ی محصولات)</h2>
+                        <ul>
+                          <li>پلی استیشن 5</li>
+                          <li>پلی استیشن 4</li>
+                          <li>اکسب اکس</li>
+                          <li>نینتندو</li>
+                          <li>بازی پلی استیشن</li>
+                          <li>بازی اکس باکس</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>دسته بازی</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت دسته بازی (همه ی محصولات)</h2>
+                        <ul>
+                          <li>دسته ps5</li>
+                          <li>دسته ps4</li>
+                          <li>دسته اکس باکس</li>
+                          <li>دسته نینتندو</li>
+                          <li>کاور دسته بازی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>تجهیزات و وسایل گیمینگ</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">
+                          قیمت وسایل گیمینگ (همه ی محصولات)
+                        </h2>
+                        <ul>
+                          <li>مانیتور گیمینگ</li>
+                          <li>صندلی گیمینگ</li>
+                          <li>کیبورد گیمینگ</li>
+                          <li>هدست گیمینگ</li>
+                          <li>هندزفری گیمینگ</li>
+                          <li>موس گیمینگ</li>
+                          <li>هدست واقهیت مجازی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>لوازم جانبی کنسول بازی</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">
+                          قیمت لوازم جانبی کنسول (همه ی محصولات)
+                        </h2>
+                        <ul>
+                          <li>کیف کنسول بازی</li>
+                          <li>کیف ps5</li>
+                          <li>کیف ps4</li>
+                          <li>کیف اکس باکس</li>
+                          <li>پایه شارژر دسته کنسول</li>
+                          <li>لوازم جانبی اکس باکس</li>
+                          <li>لوازم جانبی ps5</li>
+                          <li>استند دسته بازی</li>
+                          <li>فن خنک کننده دسته بازی</li>
+                          <li>روکش دسته اکس باکس</li>
+                          <li>روکش دسته ps4</li>
+                          <li>روکش دسته ps5</li>
+                          <li><a href="#" class="blue-a">more</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            گیمینگ
+          </span>
+          <span class="pointer category-sub sound">
+            <div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>تلوزیون</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت تلوزیون (همه ی محصولات)</h2>
+                        <ul>
+                          <li>تلوزیون اکس ویژن</li>
+                          <li>تلوزیون جی تی</li>
+                          <li>تلوزیون اسنوا</li>
+                          <li>تلوزیون جی پلاس</li>
+                          <li>تلوزیون سامسونگ</li>
+                          <li>تلوزیون سام الکترونیک</li>
+                          <li>تلوزیون دوو</li>
+                          <li>تلوزیون 35 اینچ</li>
+                          <li>تلوزیون 40 اینچ</li>
+                          <li>تلوزیون 43 اینچ</li>
+                          <li>تلوزیون 50 اینچ</li>
+                          <li>تلوزیون 55 اینچ</li>
+                          <li>تلوزیون 60 اینچ</li>
+                          <li><a href="" class="blue-a">more</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>ساند بار</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت ساندبار (همه ی محصولات)</h2>
+                        <ul>
+                          <li>ساندبار جی بی ال</li>
+                          <li>ساندبار سونی</li>
+                          <li>ساندبار کریتو</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>اسپیکر و بلندگو</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت اسپیکر (همه ی محصولات)</h2>
+                        <ul>
+                          <li>اسپیکر جی بی ال</li>
+                          <li>اسپیکر هارمن کاردن</li>
+                          <li>اسپیکر سونی</li>
+                          <li>اسپیکر انجایزر</li>
+                          <li>اسپیکر کریتیو</li>
+                          <li>اسپیکر ال جی</li>
+                          <li>اسپیکر وان مسک</li>
+                          <li>اسپیکر پووان</li>
+                          <li>اسپیکر تسکو</li>
+                          <li>اسپیکر کینگ استار</li>
+                          <li>اسپیکر شیامی</li>
+                          <li>اسپیکر میفا</li>
+                          <li>اسپیکر تا 1 میلیون تومن</li>
+                          <li>اسپیکر تا 2 میلیون تومن</li>
+                          <li>اسپیکر تا 5 میلیون تومن</li>
+                          <li>اسپیکر تا 10 میلیون تومن</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>تجهیزات ظبت و پخش</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>سیستم صوتی</li>
+                          <li>اندروید باکس</li>
+                          <li>مسکروفون</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>دوربین عکاسی</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>دوربین عکاسی و فیلمبرداری</li>
+                          <li>لنز دوربین عکاسی</li>
+                          <li>استابلایزر</li>
+                          <li>سه پایه دوربین</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            صوتی تصویری
+          </span>
+          <span class="pointer category-sub house"
+            ><div>
+              <div class="rightt">
+                <ul>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>پخت و پز</p>
+                    <div class="left-ul one">
+                      <div class="ulspec">
+                        <h2 class="romain">
+                          قیمت لوازم پخت و پز (همه ی محصولا)
+                        </h2>
+                        <ul>
+                          <li>پلوپز</li>
+                          <li>خردکن</li>
+                          <li>ساندویچ ساز</li>
+                          <li>بخارپز</li>
+                          <li>غذا ساز</li>
+                          <li>سرخ کن</li>
+                          <li>همزن</li>
+                          <li>چرخ گوشت</li>
+                          <li>اسیاب برقی</li>
+                          <li>تخم مرغ پز</li>
+                          <li>گوشت کوب برقی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>نوشیدنی ساز</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت نوشیدنی شاز (همه ی محصولات)</h2>
+                        <ul>
+                          <li>ابمیوه گیری</li>
+                          <li>چای ساز</li>
+                          <li>قهوه ساز</li>
+                          <li>چای ساز میگل</li>
+                          <li>چای ساز پارس خزر</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>یخچال فریزر</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <h2 class="romain">قیمت یخچال فریزر (همه ی محصولات)</h2>
+                        <ul>
+                          <li>یخچال فریزر</li>
+                          <li>یخچال دوقلو</li>
+                          <li>یخچال ساید بای ساید</li>
+                          <li>یخچال فریزر سنجز</li>
+                          <li>یخچال فریزر جی پلاس</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="submegacat">
+                    <img src="" alt="" />
+                    <p>شستشو و نظافت</p>
+                    <div class="left-ul">
+                      <div class="ulspec">
+                        <ul>
+                          <li>جارو برقی</li>
+                          <li>جارو شارژی</li>
+                          <li>اتو</li>
+                          <li>بخارشور</li>
+                          <li>ماشین ظرفشویی</li>
+                          <li>ماشین لباسشویی</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            لوازم خانگی
+          </span>
+        </div>
+        <!--be seller-->
+        <span class="blue-seller">فروشنده شو</span>
+      </div>
+
+      <!--category part end-->
+
+      <!--category part start-->
+      <div class="category2" id="cat2">
+        <!--left category-->
+        <div class="flex-category">
+          <span> گوشی موبایل </span>
+          <span> لپ تاپ و تبلت </span>
+          <span> هدفون و هندزفری </span>
+          <span> ساعت و بند هوشمند </span>
+          <span> کامپیوتر و ماشین های اداری </span>
+          <span> شبکه و تجهیزات زحیره سازی </span>
+          <span> گیمینگ </span>
+          <span> صوتی تصویری </span>
+          <span> لوازم خانگی </span>
+        </div>
+        <!--be seller-->
+        <span class="blue-seller">فروشنده شو</span>
+      </div>
+      <!--category part end-->
+    </div>
+    <!--header end-->
+
+    <!--slider start-->
+    <div class="slide-wap">
+      <div class="main-slider">
+        <div class="mainSlides block">
+          <img src="./img/slide-1.gif" alt="" />
+        </div>
+        <div class="mainSlides">
+          <img src="./img/slide-6.webp" alt="" />
+        </div>
+        <div class="mainSlides">
+          <img src="./img/slide-7.gif" alt="" />
+        </div>
+        <div class="mainSlides">
+          <img src="./img/slide-5.webp" alt="" />
+        </div>
+      </div>
+      <div class="navi mainNavi">
+        <div class="next" id="nextMain">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16" 
+            width="10"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+        <div class="perv" id="pervMain">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="16"
+            width="10"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="dot-container" id="dotContainer">
+        <div class="dotss dot activeDot"></div>
+        <div class="dotss dot"></div>
+        <div class="dotss dot"></div>
+        <div class="dotss dot"></div>
+      </div>
+    </div>
+    <!--slider end-->
+    <!--count down-->
+    <div class="countDown">
+      <div class="line"></div>
+      <h2>شمارش معکوس تا پایان تخفیف ها</h2>
+      <p id="timeInnner"></p>
+    </div>
+    <!--sotry start-->
+    <div class="story-container" id="storyContainer">
+      <!--story item-->
+      <div class="story story1">
+        <div class="border">
+          <img src="./img/story-5.webp" alt="" />
+        </div>
+        <p>هدفون و هندزفری</p>
+      </div>
+      <!--story item-->
+      <div class="story story2">
+        <div class="border">
+          <img src="./img/story-3.webp" alt="" />
+        </div>
+        <p>اسپیکر</p>
+      </div>
+      <!--story item-->
+      <div class="story story3">
+        <div class="border">
+          <img src="./img/story-1.webp" alt="" />
+        </div>
+        <p>قطعات موبایل</p>
+      </div>
+      <!--story item-->
+      <div class="story story4">
+        <div class="border">
+          <img src="./img/story-2.webp" alt="" />
+        </div>
+        <p>پاوربانک</p>
+      </div>
+      <!--story item-->
+      <div class="story story5">
+        <div class="border">
+          <img src="./img/story-4.webp" alt="" />
+        </div>
+        <p>لوازم خانگی</p>
+      </div>
+      <!--story item-->
+      <div class="story story6">
+        <div class="border">
+          <img src="./img/story-6.webp" alt="" />
+        </div>
+        <p>ماشین های اداری</p>
+      </div>
+    </div>
+    <!--sotry end-->
+    <!--black friday offer start-->
+    <div class="blackContainer">
+      <div class="banner-black">
+        <div class="showall"></div>
+      </div>
+      <div class="slideOfferContainer">
+        <div class="itemSlide item1" draggable="false">
+          <div class="info-more">
+            <span id="slideTime"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <!--image container-->
+          <div class="img-container">
+            <img src="./img/sl-1.webp " alt="" />
+            <p class="wrap">اپل واچ سری 8</p>
+            <div class="price">
+              <label class="discount">0%</label>
+              <label class="now-price">14,000,000</label>
+            </div>
+            <h5 class="last-price">14,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item2" draggable="false">
+          <div class="info-more">
+            <span id="slideTime2"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-2.webp" alt="" />
+            <p class="wrap">ایر پاد اپل پرو</p>
+            <div class="price">
+              <label class="discount">10%</label>
+              <label class="now-price">9,000,000</label>
+            </div>
+            <h5 class="last-price">10,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item3" draggable="false">
+          <div class="info-more">
+            <span id="slideTime3"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-3.webp" alt="" />
+            <p class="wrap">تلوزیون 45 اینچ جی پلاس</p>
+            <div class="price">
+              <label class="discount">1%</label>
+              <label class="now-price">36,000,000</label>
+            </div>
+            <h5 class="last-price">40,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item4" draggable="false">
+          <div class="info-more">
+            <span>EXPIRED</span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-4.webp" alt="" />
+            <p class="wrap">کلگی شارژر انکر 25w</p>
+            <div class="price">
+              <label class="discount">40%</label>
+              <label class="now-price">600,000</label>
+            </div>
+            <h5 class="last-price">1,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item5" draggable="false">
+          <div class="info-more">
+            <span id="slideTime5"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-5.webp" alt="" />
+            <p class="wrap">پاوربانک انکر</p>
+            <div class="price">
+              <label class="discount">8%</label>
+              <label class="now-price">3,539,000</label>
+            </div>
+            <h5 class="last-price">3,819,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item6" draggable="false">
+          <div class="info-more">
+            <span id="slideTime6"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-6.webp" alt="" />
+            <p class="wrap">پیرینتر طرح cannon</p>
+            <div class="price">
+              <label class="discount">0%</label>
+              <label class="now-price">6,000,000</label>
+            </div>
+            <h5 class="last-price">6,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item7" draggable="false">
+          <div class="info-more">
+            <span>EXPIRED</span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-7.webp" alt="" />
+            <p class="wrap">لپتاپ لنوو</p>
+            <div class="price">
+              <label class="discount">1%</label>
+              <label class="now-price">45,000,000</label>
+            </div>
+            <h5 class="last-price">50,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item8" draggable="false">
+          <div class="info-more">
+            <span id="slideTime7"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-9.webp" alt="" />
+            <p class="wrap">سامسونگ z flip سری 4</p>
+            <div class="price">
+              <label class="discount">0%</label>
+              <label class="now-price">40,819,000</label>
+            </div>
+            <h5 class="last-price">40,819,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item9" draggable="false">
+          <div class="info-more">
+            <span id="slideTime8"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/sl-8.webp" alt="" />
+            <p class="wrap">گوشی پوکو c65</p>
+            <div class="price">
+              <label class="discount">8%</label>
+              <label class="now-price">12,110,000</label>
+            </div>
+            <h5 class="last-price">12,110,000</h5>
+          </div>
+        </div>
+      </div>
+      <!--navigation-->
+      <div class="naviSlide">
+        <!--next btn-->
+        <div class="next" id="nextSlide">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+        </div>
+        <!--perv btn-->
+        <div class="perv disableBtn" id="pervSlide">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!--black friday offer end-->
+    <!--advertise part start-->
+    <div class="advertise">
+      <img src="./img/ad1.webp" alt="" />
+      <img src="./img/ad2.webp" alt="" />
+      <img src="./img/ad3.webp" alt="" />
+    </div>
+    <!--advertise part end-->
+    <!--black friday offer start-->
+    <div class="blackContainer customize-v3">
+      <div class="banner-slider">
+        <h2>پرچمداران هوشمند</h2>
+        <a href="">نمایش همه</a>
+      </div>
+      <div class="slideOfferContainer">
+        <div class="itemSlide item1ss" draggable="false">
+          <!--image container-->
+          <div class="img-container">
+            <img src="./img/ph1.webp " alt="" />
+            <p class="wrap">پرچم دار شیامی</p>
+            <h5 class="priceness">60,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item2ss" draggable="false">
+          <div class="img-container">
+            <img src="./img/ph2.webp" alt="" />
+            <p class="wrap">سامسونگ z flip 4</p>
+            <h5 class="priceness">50,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item3ss" draggable="false">
+          <div class="img-container">
+            <img src="./img/ph3.webp" alt="" />
+            <p class="wrap">سامسونگ s23 الترا</p>
+            <h5 class="priceness">55,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item4ss" draggable="false">
+          <div class="img-container">
+            <img src="./img/ph4.webp" alt="" />
+            <p class="wrap">سامسونگ z flode 3</p>
+            <h5 class="priceness">39,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item5ss" draggable="false">
+          <div class="img-container">
+            <img src="./img/ph-5.webp" alt="" />
+            <p class="wrap">سامسونگ z flode 4</p>
+            <h5 class="priceness">47,000,000</h5>
+          </div>
+        </div>
+      </div>
+      <!--navigation-->
+      <div class="naviSlide">
+        <!--next btn-->
+        <div class="next" id="nextSlidess">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+        </div>
+        <!--perv btn-->
+        <div class="perv disableBtn" id="pervSlidess">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!--black friday offer end-->
+    <!--bartar start-->
+    <div class="bartar">
+      <h2>برترین‌های موبایل</h2>
+      <div class="item-container">
+        <div class="item-control">
+          <img src="./img/cat1.png" alt="" />
+          <p>سامسونگ</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/cat2.png" alt="" />
+          <p>شیایمی</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/cat3.png" alt="" />
+          <p>پوکو</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/cat4.png" alt="" />
+          <p>ایفون</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/cat5.png" alt="" />
+          <p>انر</p>
+        </div>
+      </div>
+    </div>
+    <!--bartar end-->
+    <!--ad big start-->
+    <div class="big-ad">
+      <img src="./img/ad-big.webp" alt="" />
+    </div>
+    <!--ad big end-->
+    <!--black friday offer start-->
+    <div class="blackContainer customize-v3">
+      <div class="banner-slider">
+        <h2>لپتاپ ها در تکنولایف</h2>
+        <a href="">نمایش همه</a>
+      </div>
+      <div class="slideOfferContainer">
+        <div class="itemSlide item1sss" draggable="false">
+          <!--image container-->
+          <div class="img-container">
+            <img src="./img/lap1.webp " alt="" />
+            <p class="wrap">لپتاپ accr</p>
+            <h5 class="priceness">29,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item2sss" draggable="false">
+          <div class="info-more">
+            <span id="slideTimexi"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/lap-7.webp" alt="" />
+            <p class="wrap">لپتاپ ideapad gaming</p>
+            <h5 class="priceness">50,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item3sss" draggable="false">
+          <div class="img-container">
+            <img src="./img/lap2.webp" alt="" />
+            <p class="wrap">لپتاپ ایسوس</p>
+            <h5 class="priceness">20,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item4sss" draggable="false">
+          <div class="info-more">
+            <span id="slideTimex"></span>
+            <label for="">بلک فرایدی</label>
+          </div>
+          <div class="img-container">
+            <img src="./img/lap3.webp" alt="" />
+            <p class="wrap">سرفیس ماکروسافت 7</p>
+            <h5 class="priceness">40,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item5sss" draggable="false">
+          <div class="img-container">
+            <img src="./img/lap4.webp" alt="" />
+            <p class="wrap">تبلت با کیبورد ایسوس</p>
+            <h5 class="priceness">34,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item6sss" draggable="false">
+          <div class="img-container">
+            <img src="./img/lap5.webp" alt="" />
+            <p class="wrap">لپتاپ ایسوس اقتسادی</p>
+            <h5 class="priceness">19,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item7sss" draggable="false">
+          <div class="img-container">
+            <img src="./img/lap6.webp" alt="" />
+            <p class="wrap">lenovo legion</p>
+            <h5 class="priceness">70,000,000</h5>
+          </div>
+        </div>
+      </div>
+      <!--navigation-->
+      <div class="naviSlide">
+        <!--next btn-->
+        <div class="next" id="nextSlidesss">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+        </div>
+        <!--perv btn-->
+        <div class="perv disableBtn" id="pervSlidesss">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!--black friday offer end-->
+    <!--black friday offer start-->
+    <div class="blackContainer redborder">
+      <div class="red-banner">
+        <img src="./img/banner2.svg" alt="" />
+      </div>
+      <div class="slideOfferContainer">
+        <div class="itemSlide item1ssss" draggable="false">
+          <!--image container-->
+          <div class="img-container">
+            <img src="./img/sl-1.webp " alt="" />
+            <p class="wrap">اپل واچ سری 8</p>
+            <div class="price">
+              <label class="discount">0%</label>
+              <label class="now-price">14,000,000</label>
+            </div>
+            <h5 class="last-price">14,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item2ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per8.webp" alt="" />
+            <p class="wrap">استند گوشی</p>
+            <div class="price">
+              <label class="discount">30%</label>
+              <label class="now-price">90,000</label>
+            </div>
+            <h5 class="last-price">300,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item3ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per1.webp" alt="" />
+            <p class="wrap">rdmi note 12 pro</p>
+            <div class="price">
+              <label class="discount">0%</label>
+              <label class="now-price">24,000,000</label>
+            </div>
+            <h5 class="last-price">24,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item4ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per2.webp" alt="" />
+            <p class="wrap">فن لپتاپ به همراه rgb</p>
+            <div class="price">
+              <label class="discount">8%</label>
+              <label class="now-price">3,539,000</label>
+            </div>
+            <h5 class="last-price">3,819,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item5ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per3.webp" alt="" />
+            <p class="wrap">لپتاپ loa</p>
+            <div class="price">
+              <label class="discount">20%</label>
+              <label class="now-price">80,000,000</label>
+            </div>
+            <h5 class="last-price">100,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item6ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per4.webp" alt="" />
+            <p class="wrap">هارد ssd 1 ترابایت</p>
+            <div class="price">
+              <label class="discount">8%</label>
+              <label class="now-price">3,539,000</label>
+            </div>
+            <h5 class="last-price">3,819,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item7ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per5.webp" alt="" />
+            <p class="wrap">تبلت هواوی</p>
+            <div class="price">
+              <label class="discount">31%</label>
+              <label class="now-price">20,000,000</label>
+            </div>
+            <h5 class="last-price">30,000,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item8" draggable="false">
+          <div class="img-container">
+            <img src="./img/per6.webp" alt="" />
+            <p class="wrap">Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+            <div class="price">
+              <label class="discount">8%</label>
+              <label class="now-price">3,539,000</label>
+            </div>
+            <h5 class="last-price">3,819,000</h5>
+          </div>
+        </div>
+        <div class="itemSlide item9ssss" draggable="false">
+          <div class="img-container">
+            <img src="./img/per7.webp" alt="" />
+            <p class="wrap">Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+            <div class="price">
+              <label class="discount">8%</label>
+              <label class="now-price">3,539,000</label>
+            </div>
+            <h5 class="last-price">3,819,000</h5>
+          </div>
+        </div>
+      </div>
+      <!--navigation-->
+      <div class="naviSlide">
+        <!--next btn-->
+        <div class="next" id="nextSlidessss">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z"
+            />
+          </svg>
+        </div>
+        <!--perv btn-->
+        <div class="perv disableBtn" id="pervSlidessss">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+          >
+            <path
+              d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <!--black friday offer end-->
+    <!--bartar start-->
+    <div class="bartar">
+      <h2>برترین‌های لپتاپ ها</h2>
+      <div class="item-container">
+        <div class="item-control">
+          <img src="./img/ca1.webp" alt="" />
+          <p>ایسوس</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/ca2.webp" alt="" />
+          <p>اچ پی</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/ca3.webp" alt="" />
+          <p>مک بوک</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/ca4.webp" alt="" />
+          <p>لنوو</p>
+        </div>
+        <div class="item-control">
+          <img src="./img/ca-5.webp" alt="" />
+          <p>ایسر</p>
+        </div>
+      </div>
+    </div>
+    <!--bartar end-->
+    <!--price range start-->
+
+    <div class="range-container">
+      <div class="price-range range">
+        <h3>گوشی بر اساس قیمت</h3>
+        <div class="range-content">
+          <!--items-->
+          <div class="range-item blue-100">گوشی ساده و ارزان</div>
+          <div class="range-item blue-200">
+            تا <strong class="font-bold-24"> 5 </strong>میلیون
+          </div>
+          <div class="range-item blue-300">
+            تا <strong class="font-bold-24"> 15 </strong>میلیون
+          </div>
+          <div class="range-item blue-400">
+            تا <strong class="font-bold-24"> 30 </strong>میلیون
+          </div>
+          <div class="range-item blue-500">
+            تا <strong class="font-bold-24"> 50 </strong>میلیون
+          </div>
+          <div class="range-item blue-600">
+            تا <strong class="font-bold-24"> 75 </strong>میلیون
+          </div>
+        </div>
+      </div>
+      <div class="ability-range range">
+        <h3>گوشی بر اساس ویژگی</h3>
+        <div class="range-content">
+          <!--items-->
+          <div class="range-item red-theme">گیمینگ</div>
+          <div class="range-item yellow-theme">دوربین</div>
+          <div class="range-item orange-theme">5G</div>
+          <div class="range-item blue-theme">باتری</div>
+          <div class="range-item perpule-theme">ضد اب</div>
+          <div class="range-item green-theme">شارژ سریع</div>
+        </div>
+      </div>
+    </div>
+
+    <!--price range end-->
+    <!--bartar start-->
+    <div class="bartar">
+      <h2>برترین‌های موبایل</h2>
+      <div class="item-container">
+        <div class="item-control no-filter">
+          <img src="./img/screenshoteasy (1).png" alt="" />
+          <p>هایلو</p>
+        </div>
+        <div class="item-control no-filter">
+          <img src="./img/screenshoteasy (2).png" alt="" />
+          <p>شیایمی</p>
+        </div>
+        <div class="item-control no-filter">
+          <img src="./img/screenshoteasy (3).png" alt="" />
+          <p>اپل</p>
+        </div>
+        <div class="item-control no-filter">
+          <img src="./img/screenshoteasy (4).png" alt="" />
+          <p>سامسونگ</p>
+        </div>
+        <div class="item-control no-filter">
+          <img src="./img/screenshoteasy (5).png" alt="" />
+          <p>هواوی</p>
+        </div>
+        <div class="item-control no-filter">
+          <img src="./img/screenshoteasy (6).png" alt="" />
+          <p>انکر</p>
+        </div>
+      </div>
+    </div>
+    <!--bartar end-->
+    <!--ads-->
+    <div class="ads-double">
+      <img src="./img/ad-d1.webp" alt="" />
+      <img src="./img/ad-d2.webp" alt="" />
+    </div>
+    <!--lavazem khane start-->
+    <div class="heading">
+      <h3>لوازم خانگی</h3>
+      <span class="gray">خانه و اشپزخانه</span>
+    </div>
+    <div class="lavazem-container">
+      <div class="lavazem-item">
+        <img src="./img/l-1.webp" alt="" />
+        <div class="hover">بخاری برقی</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-2.webp" alt="" />
+        <div class="hover">جاروبرقی</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-3.webp" alt="" />
+        <div class="hover">ابمیوه گیری</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-4.webp" alt="" />
+        <div class="hover">کولر گازی</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-5.webp" alt="" />
+        <div class="hover">چای ساز</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-6.webp" alt="" />
+        <div class="hover">اتو</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-7.webp" alt="" />
+        <div class="hover">پلوپز</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-8.webp" alt="" />
+        <div class="hover">ماکروویو</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-9.webp" alt="" />
+        <div class="hover">یخچال</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-10.webp" alt="" />
+        <div class="hover">قهوه ساز</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-11.webp" alt="" />
+        <div class="hover">چرخ گوشت</div>
+      </div>
+      <div class="lavazem-item">
+        <img src="./img/l-12.webp" alt="" />
+        <div class="hover">ماشین ظرفشویی</div>
+      </div>
+    </div>
+    <!--lavazem khane end-->
+
+    <!--ads-->
+    <div class="ads-double">
+      <img src="./img/ad-d1.webp" alt="" />
+      <img src="./img/ad-d2.webp" alt="" />
+    </div>
+    <!--veblog start-->
+    <div class="veblog-container blue-border-30r">
+      <div class="heading-news">
+        <h2>از وبلاگ تکنولایف</h2>
+        <a href="#">مشاهده همه موارد</a>
+      </div>
+      <div class="news-container">
+        <div class="news">
+          <img src="./img/n1.webp" alt="" />
+          <div class="disc">برسی ancqcytl3</div>
+        </div>
+        <div class="news">
+          <img src="./img/n2.webp" alt="" />
+          <div class="disc">همه چیز درباره ایفون 15</div>
+        </div>
+        <div class="news">
+          <img src="./img/n3.webp" alt="" />
+          <div class="disc">بهترین فیلم های جنگی جهان</div>
+        </div>
+        <div class="news">
+          <img src="./img/n4.webp" alt="" />
+          <div class="disc">برسی ساعت طرح اپل واچ سری 8 hk9 pro</div>
+        </div>
+      </div>
+    </div>
+    <!--veblog end-->
+    <!--border-->
+    <div class="border-top"></div>
+    <!--licence-->
+    <div class="flex column">
+      <div class="licenceContainer">
+        <div class="licence">
+          <h3>خرید گوشی</h3>
+          <p>
+            خرید گوشی و خرید اینترنتی گوشی از کارهای سخت و پرچالشی است که زمان
+            زیادی از خریدار موبایل می‌گیرد. برای خرید گوشی و خرید اینترنتی
+            موبایل باید به نکات مهمی توجه کرد که چندتا از آن‌ها خیلی مهم هستند:
+            اصالت فروشگاه موبایل، قیمت گوشی موبایل ، مدل گوشی موبایل، امکانات
+            گوشی موبایل و گارانتی خرید گوشی موبایل از نکات مهمی است که افراد
+            هنگام خرید موبایل به آن‌ها توجه می‌کنند. این روزها برای خرید گوشی دو
+            راه هست: خرید گوشی به صورت حضوری و خرید موبایل آنلاین از فروشگاه
+            اینترنتی موبایل که البته باید معتبر باشند.
+          </p>
+          <h3>فروشگاه اینترنتی موبایل</h3>
+          <p class="opacity-900 opacity">
+            برای خرید گوشی موبایل از سایت خرید گوشی باید به چه نکاتی توجه کرد؟
+            فروشگاه‌های اینترنتی موبایل زیادی هستند که انواع و اقسام گوشی‌های
+            موبایل را می‌فروشند اما همه‌ی آن‌ها قابل اعتماد نیستند، مثلا خیلی از
+            سایت‌های خرید گوشی با شعار
+          </p>
+          <p class="opacity-800 opacity">
+            خرید اینترنتی گوشی ارزان، مشتری جذب می‌کند. بنابراین همانطور که خرید
+            موبایل به صورت حضوری کار سختی است، خرید اینترنتی موبایل هم پر از
+            چالش است. توجه به نشانه نماد الکترونیکی در صفحه سایت خرید گوشی،
+            خواندن نظرات خریداران
+          </p>
+          <p class="opacity-700 opacity">
+            موبایل در صفحه خرید گوشی فروشگاه موبایل و درگاه امن پرداخت و پروتکل
+            ssl راه‌هایی برای پی بردن به اصالت فروشگاه اینترنتی موبایل و قابل
+            اعتماد بودنش برای خرید موبایل آنلاین است.
+          </p>
+        </div>
+        <div id="showTheDetail" class="example">
+          <h3>خرید اقساطی گوشی</h3>
+          <p>
+            خرید گوشی موبایل با توجه به بالا رفتن قیمت ارز سخت شده، با این حال
+            بعضی از فروشگاه‌های اینترنتی موبایل و سایت‌های خرید گوشی، امکان خرید
+            اقساطی گوشی موبایل و خرید اینترنتی موبایل را فراهم کرده‌اند. در خرید
+            اقساطی گوشی موبایل، خرید اینترنتی گوشی از طریق افزایش اعتبار با چک
+            یا سفته امکان پذیر است. خریداران قسطی موبایل می‌توانند با ارائه چک
+            یا سفته، خرید موبایل را انجام دهند و سپس در اقساط ماهانه مشخص شده،
+            مبلغ خرید گوشی را بازگردانند. معمولا خرید اقساطی گوشی موبایل شامل
+            موبایل‌های پرفروش بازار مثل گوشی سامسونگ، گوشی شیائومی و گوشی هواوی
+            می‌شود. نکته‌ی دیگری که در خرید اینترنتی موبایل باید به آن توجه کرد،
+            قیمت منصفانه موبایل برای فروش است.
+          </p>
+          <h3>خرید گوشی سامسونگ</h3>
+          <p>
+            گوشی‌های هوشمند سامسونگ، پرطرفدارترین برند موبایل در ایران هستند.
+            برای خرید گوشی سامسونگ انتخاب‌های زیادی وجود دارد که با توجه به
+            امکانات و مشخصات، قیمت متفاوتی دارند. مشخصات گوشی‌های موبایل سامسونگ
+            در خرید آنلاین گوشی سامسونگ به شدت تاثیرگذارند. البته باید به
+            گارانتی گوشی سامسونگ هم اشاره کرد. شرکت‌های ارائه دهنده گارانتی
+            موبایل که نمایندگی فروشگاه اینترنتی موبایل سامسونگ را دارند، باعث
+            ایجاد تفاوت در قیمت گوشی سامسونگ می‌شوند. برای انتخاب و خرید آنلاین
+            گوشی موبایل سامسونگ، باید به آن فروشگاه اینترنتی موبایل سامسونگ
+            اعتماد کرد که قیمت موبایل‌های سامسونگ را به صورت معتبر و مصوب دولتی
+            می‌فروشد و همچنین تعهد به قیمت ارائه شده و ضمانت بازگشت وجه نیز دارد
+          </p>
+          <h3>خرید گوشی شیائومی</h3>
+          <p>
+            شیائومی کمپانی تولیدکننده گوشی و تبلت چینی است که بسیار هم پرطرفدار
+            است. گوشی‌ <a class="blue-a">گوشی شیائومی </a> در میان گوشی‌های میان
+            رده جهانی، رتبه‌ی بالایی دارند. تنوع و کیفیت بالای گوشی‌های موبایل
+            شیائومی، دست خریدار را برای خرید گوشی شیائومی باز می‌کند. تکنولایف
+            دارنده نماد اعتماد الکترونیکی و به عنوان مرکز رسمی فروش برند گوشی
+            شیائومی فعالیت می‌کند. تکنولایف شیائومی، با همکاری شرکت کسری پارس،
+            فروش گوشی‌های شیائومی را با نرخ مصوب دولتی انجام می‌دهد که شامل
+            گارانتی 18 ماهه است.
+          </p>
+          <h3>خرید گوشی هواوی</h3>
+          <p>
+            شرکت هواوی، شرکت چند ملیتی است که تولیدکننده گوشی موبایل هواوی و
+            محصولات دیجیتال هواوی است.برای خرید گوشی هواوی در ایران، سایت‌های
+            خرید گوشی زیادی هستند که از میان آن‌ها باید به فروشگاه اینترنتی
+            موبایلی اعتماد کرد که علاوه بر داشتن نمایندگی هواوی و خدمات پس از
+            فروش، ضمانت بازگشت وجه داشته باشند. تکنولایف هواوی با قیمت معتبر و
+            مصوب دولتی اقدام به فروش انواع گوشی موبایل هواوی می‌کند
+          </p>
+          <h3>خرید گوشی اپل</h3>
+          <p>
+            شرکت اپل توسط استیو جابز و استیو وزنیاک تاسیس شده و محصولات
+            الکترونیکی مثل لپ تاپ، کامپیوتر و گوشی تولید می‌کند. گوشی اپل که به
+            گوشی آیفون معروف هستند، معروف‌ترین محصولات شرکت اپل به حساب می‌آیند.
+            در حال حاضر قیمت گوشی اپل یا گوشی آیفون نسبت به سایر گوشی‌های
+            سامسونگ، هواوی و شیائومی بالاتر است. جدیدترین گوشی آیفون، گوشی آیفون
+            13 پرومکس است و گوشی آیفون SE، آیفون 11 پرو و آیفون 11 پرومکس هم از
+            دیگر گوشی‌ های آیفون جدید هستند که تا قبل از آیفون 13 به بازار
+            آمدند. گوشی آیفون با وجود گران بودنش همیشه جزو گوشی های پرطرفدار در
+            ایران است و سهم زیادی از خرید گوشی هوشمند را به خود اختصاص داده.
+            گوشی های اپل معمولا در 4 ظرفیت 32، 64، 128 و 256 گیگابایتی تولید
+            می‌شوند و کیفیت دوربین متفاوتی دارند. همانطور که گفتیم، با وجود بالا
+            بودن قیمت گوشی آیفون ، خیلی‌ها طرفدار آن هستند. دغدغه چنین افرادی
+            اصل بودن گوشی آیفون نیز هست. تکنولایف ضمانت اصل بودن گوشی آیفون را
+            به شما می‌دهد و سایر محصولات اپل از جمله هندزفری و اپل واچ را هم
+            تضمین می‌کند.
+          </p>
+          <h3>خرید ارزانترین گوشی های 5G</h3>
+          <p>
+            با پیشرفت تکنولوژی سرعت اینترنت در جهان، گوشی های 5g عرضه شدند. گوشی
+            های5G سرعت بیشتری نسبت به گوشی های 4g دارند. از بهترین گوشی های5G در
+            بازار ایران که جزو ارزانترین گوشی های 5G هم هستند می‌توان به گوشی
+            شیائومی 11 لایت 5g ne، گوشی سامسونگ گلکسی a34، گوشی سامسونگ گلکسی
+            a54 دو سیم کارت، گوشی موبایل موتورولا دو سیم کارت moto g 5g، گوشی
+            سامسونگ گلکسی m33، گوشی شیائومی ردمی نوت10 5g و گوشی پوکو X5 اشاره
+            کرد. بیشتر گوشی های 5g تولیدی شرکت سامسونگ هستند و بعد از آن گوشی
+            های شیائومی اقدام به فروش ارزانترین گوشی های 5g می‌کنند. در تکنولایف
+            می‌توانید تمامی گوشی های5g را با بهترین و ارزان ترین قیمت گوشی 5g
+            بخرید. امکان خرید گوشی اندروید ارزان قیمت از فروشگاه تکنولایف همیشه
+            فراهم بوده است و به عنوان مثال شما می‌توانید گلکسی های سری a یا ردمی
+            A2 های شیائومی را مدنظر قرار دهید.
+          </p>
+          <h3>فروشگاه موبایل، لوازم جانبی و کالای دیجیتال تکنولایف</h3>
+          <p>
+            در تکنولایف می‌توانید در کنار خرید گوشی هوشمند و اطلاع از قیمت انواع
+            گوشی های سامسونگ، گوشی آیفون، گوشی شیائومی، گوشی هواوی و گوشی
+            موتورولا، لوازم جانبی موبایل مثل هندزفری، کارت حافظه موبایل، شارژر
+            موبایل ، پاور بانک ، هارد اکسترنال، حافظه های اس اس دی، کابل و رابط
+            موبایل، تلویزیون، کامپیوتر و لپ تاپ و کنسول های بازی متنوع مثل ایکس
+            باکس و ps5 را بخرید. برای اطلاع از قیمت تلویزیون خرید تلویزیون و
+            خرید مانیتور می‌توانید به صفحه فروش محصولات صوتی و تصویری تکنولایف
+            سر بزنید. در این بخش تمامی برندهای تلویزیون و مانیتور مانند تلویزیون
+            و مانیتور جی پلاس، ایکس ویژن، پانورامیک، تی سی ال موجود است. همچنین
+            برای اطلاع از قیمت هدفون های حرفه ای سیمی، بی سیم و گیمینگ در کنار
+            انواع هندزفری بلوتوثی و خرید ایرپاد اپل ، خرید ایرپاد سامسونگ ، خرید
+            ایرپاد شیائومی ، خرید هندزفری های هایلو و خرید ایرپاد qcy می‌توانید
+            به صفحه فروش و خرید هدفون و هندزفری تکنولایف سری بزنید. در این صفحه
+            تمامی هدفون ها و هندزفری ها از برندهای مختلف اپل، سامسونگ، شیائومی،
+            هواوی و نوکیا موجود است. انواع ساعت هوشمند از جمله اپل واچ و ساعت
+            هوشمند سامسونگ و دیگر برندهای اسمارت واچ نیز در تکنولایف با گارانتی
+            معتبر ارائه می شود
+          </p>
+        </div>
+        <a id="licenceShow" class="blue-a">نمایش بیشتر</a>
+        <a id="licenceShowClose" class="blue-a none">بستن</a>
+      </div>
+      <!--footer start-->
+      <div class="footer">
+        <div class="top-footer floor">
+          <img src="./img/mainlogo.svg" alt="" />
+          <a href="#top">برگشت به بالا</a>
+        </div>
+        <div class="secend-rank floor">
+          <ul>
+            <li>تلفن : 021 - 47708000 -91077500 0021</li>
+            <li>ایمیل : info@technolife.ir</li>
+          </ul>
+          <img src="./img/social.png" alt="" />
+        </div>
+        <div class="third-rank floor">
+          <ul>
+            <h3>دسترسی سریع</h3>
+            <li>بلاگ</li>
+            <li>قیمت روز گوشی</li>
+            <li>گوشی سامسونگ</li>
+            <li>گوشی ایفون</li>
+            <li>گوشی شیایمی</li>
+            <li>گوشی پوکو</li>
+            <li>مقایسه گوشی</li>
+          </ul>
+          <ul>
+            <h3>پرفروش ترین محصولات</h3>
+            <li>شیاموی نوت 11</li>
+            <li>گوشی a32 سامسونگ</li>
+            <li>پوکو x4 پرو</li>
+            <li>گوشی a23 سامسونگ</li>
+            <li>گوشی s23 ultra سامسونگ</li>
+          </ul>
+          <ul>
+            <h3>درباره ما</h3>
+
+            <li>تکنولایف در یک نگاه</li>
+            <li>اهداف و تعهد های ما</li>
+            <li>سرگذشت تکنولایف</li>
+            <li>تماس باما</li>
+          </ul>
+        </div>
+        <div class="third-rank floor">
+          <ul>
+            <h3>پیش از خرید</h3>
+            <li>راهنمای خرید از تکنولایف</li>
+            <li>راهنمای خرید اقساتی</li>
+            <li>روش های خرید از تکنولایف</li>
+            <li>ضمانت هفت روزه تکنولایف</li>
+            <li>شیوه ها و هزینه ارسال</li>
+          </ul>
+          <ul>
+            <h3>پس از خرید</h3>
+            <li>تضمین رجیستری</li>
+            <li>رویه های بازگرداندن کالا</li>
+            <li>سوالات متداول رجیستری</li>
+            <li>رهگیری سفارش ها</li>
+          </ul>
+          <ul>
+            <h3>قوانین و مقررات</h3>
+            <li>قوانین و مقررات</li>
+            <li>حریم خصوصی</li>
+            <li>از زبان مشتریان تکنولایف</li>
+            <li>چرا تکنولایف</li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="bottom">
+          <p>
+            1402-1391 تمامی حقوق مادی و معنوی این سایت متعلق به تکنولایف
+            می‌باشد.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--footer end-->
+
+    <!--script links-->
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

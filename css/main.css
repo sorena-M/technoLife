@@ -1,0 +1,10 @@
+@import url(./setting.css);
+@import url(./slider.css);
+@import url(./submenu.css);
+/*responsive sizes*/
+@import url(./responsive/xxl.css);
+@import url(./responsive/xl.css);
+@import url(./responsive/lg.css);
+@import url(./responsive/md.css);
+@import url(./responsive/sm.css);
+@import url(./responsive/xs.css);

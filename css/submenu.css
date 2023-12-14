@@ -1,0 +1,117 @@
+/*this submenu is fully responsive 
+ beceause --> {it only works at lg to xxl sizes} 
+ below that it going to be --> {hamburger menu } */
+.category-sub > div {
+  position: fixed;
+  height: 60vh;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  margin-top: 18px;
+}
+.category-sub {
+  display: flex;
+  justify-content: start;
+}
+.category-sub:hover > div {
+  display: block !important;
+}
+/*cordination of last categoris*/
+.sound > div {
+  margin-right: -70px;
+}
+.gaming > div {
+  margin-right: -20px;
+}
+.house > div {
+  margin-right: -150px;
+}
+.category-sub > div > div.rightt {
+  min-width: 550px;
+  height: 100%;
+  float: right;
+  overflow: auto;
+  flex-grow: 2;
+  position: relative !important;
+  background-color: white !important;
+  border-radius: 30px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 3px gray;
+}
+.category-sub > div > div.rightt > ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  direction: rtl;
+}
+
+.submegacat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  color: #030846;
+  padding: 5px 10px !important;
+}
+.submegacat img {
+  width: 45px;
+  height: 45px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.left-ul {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgb(225, 247, 255);
+  width: 250px;
+  display: none;
+  overflow: hidden;
+  z-index: 100 !important;
+}
+.submegacat:hover .left-ul {
+  display: block;
+  z-index: 100;
+}
+.submegacat:hover {
+  background-color: #2b2b2b26;
+}
+
+.submegacat .one {
+  display: block;
+}
+div.ulspec {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+  display: flex;
+  padding: 10px 1px;
+}
+div.ulspec > ul {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 10px;
+  padding-bottom: 30px;
+}
+
+.ulspec li {
+  font-size: 11px;
+  padding: 5px 0;
+  color: #050b59;
+}
+.romain {
+  font-size: 13px !important;
+}
